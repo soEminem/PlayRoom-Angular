@@ -12,7 +12,7 @@ export class ApiGamesService {
    constructor(private http: HttpClient) { }
 
     getAllGames(){
-      return this.http.get<any>(`${this.url}/getAllGames`);
+      return this.http.get<any>(`${this.url}/api/games/getAllGames`);
     }
 
   }
