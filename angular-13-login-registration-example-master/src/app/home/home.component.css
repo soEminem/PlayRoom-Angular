@@ -1,0 +1,55 @@
+.home {
+
+    min-height: 100vh;
+  
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://th.bing.com/th/id/R.65b48f4f8bc1ff088a1226cee80f37f4?rik=xbpE2KdeqzCOAw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f0Kh5Dyj.jpg&ehk=laxDxbMSiZD4CTCCOpwq1wD2khKw79rVRegCoiKrJ68%3d&risl=&pid=ImgRaw&r=0) no-repeat;
+  
+    background-size: cover;
+  
+    background-position: center;
+  
+    background-attachment: fixed;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    flex-flow: column;
+  
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  
+  }
+  
+  
+  
+  .home h1 {
+  
+  
+  
+    color: rgb(255, 255, 255);
+  
+    text-align: center;
+  
+    text-shadow: 0 .3rem .5rem #000;
+  
+    padding: 0 1rem;
+  
+    text-transform: uppercase;
+  
+  }
+  
+  
+  
+  .home .btn {
+  
+    background-color: aliceblue;
+  
+    border:1px solid white;
+  
+    border-radius: 10px;
+  
+    color: rgb(0, 0, 0);
+  
+  }
