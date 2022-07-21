@@ -34,4 +34,5 @@ public class GamesController {
     public void updateGame(@PathVariable("id") Long id, @RequestBody Games game) {
         gamesService.update(id, game);
     }
+    
 }
