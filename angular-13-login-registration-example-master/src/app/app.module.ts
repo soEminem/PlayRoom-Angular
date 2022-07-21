@@ -16,7 +16,8 @@ import { BoardUserComponent } from './board-user/board-user.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { CatalogComponent } from './catalog/catalog.component';
 
-import {MatTableModule} from '@angular/material/table'; 
+import {MatTableModule} from '@angular/material/table';
+import { DonationComponent } from './donation/donation.component'; 
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {MatTableModule} from '@angular/material/table';
     BoardModeratorComponent,
     BoardUserComponent,
     CatalogComponent,
+    DonationComponent,
     
   ],
   imports: [
