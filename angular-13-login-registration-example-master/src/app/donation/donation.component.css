@@ -1,1 +1,32 @@
-/*ffffffffffffffffffffffffffffffffffffffffff*/
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa6MzyiRV6l7n-DOWTBHjzo4EudA8Wqr_na7P1OmxlG9Y6B92dZxxE5pdwHZ-LQC9KLtQ&usqp=CAU);
+    height: 1000px;
+}
+
+form{
+    background-color: #0275d8;
+    color: white ;
+    font-family: serif;
+    border-radius: 30px;
+
+    font-size: large;
+}
+
+.header{
+    color: white;
+    font-size: 22px;
+}
+
+#sendGame{
+    margin: 2%;
+}
+
+label{
+    background-color: lightgray;
+    font-size: px;
+    border-radius: 5px;
+    margin: 1%;
+    color: #0275d8;
+    align-items: center;
+    justify-items: center;
+}

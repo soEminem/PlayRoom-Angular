@@ -18,6 +18,8 @@ import { CatalogComponent } from './catalog/catalog.component';
 
 import {MatTableModule} from '@angular/material/table';
 import { DonationComponent } from './donation/donation.component'; 
+import {MatIconModule} from '@angular/material/icon'; 
+
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { DonationComponent } from './donation/donation.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    MatIconModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
