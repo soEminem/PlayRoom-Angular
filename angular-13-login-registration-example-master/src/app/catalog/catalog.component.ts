@@ -15,13 +15,23 @@ export class CatalogComponent implements OnInit {
   ngOnInit(): void {
   this.getGames()
   }
-
+ 
   getGames(){
-    this.ApiGames.getAllGames().subscribe({
+     this.ApiGames.getAllGames().subscribe({
       next : (success:any ) =>{
         this.gamesDB = success
       }
     })
+  }
+
+  editGame(gameId: any) {
+    //this.ApiGames.
+
+
+  }
+
+  deleteGame(gameId: any) {
+
   }
 
 }

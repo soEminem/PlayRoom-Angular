@@ -1,9 +1,12 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-10">
             <h1>WELCOME TO 3F PLAYROOM CATALOG</h1>
         </div>
+        <div class="col-lg-2 text-right">
+          <span class="material-icons py-3 px-3">add</span>
+      </div>
     </div>
 
     <div class="row">
@@ -16,7 +19,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Player Number</th>
                     <th scope="col">Pegi</th>
-                    
+                    <th scope="col">Operations</th>                    
 
                   </tr>
                 </thead>
@@ -26,6 +29,7 @@
                 <td>{{f.name}}</td>
                 <td>{{f.nplayer}}</td>
                 <td>{{f.pegi}}</td>
+                <td><span class="material-icons py-2 px-2" (click)="editGame(f)">edit</span> <span class="material-icons py-2 px-2" (click)="deleteGame(f)">delete</span></td>
               </tr>
               </tbody>
 
