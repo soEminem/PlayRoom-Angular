@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,8 @@ import { CatalogComponent } from './catalog/catalog.component';
 
 import {MatTableModule} from '@angular/material/table';
 import { DonationComponent } from './donation/donation.component'; 
+import {MatIconModule} from '@angular/material/icon'; 
+
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { DonationComponent } from './donation/donation.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]

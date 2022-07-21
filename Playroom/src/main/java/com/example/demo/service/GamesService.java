@@ -16,7 +16,7 @@ public class GamesService {
 		return gamesRepo.findAll();
 	}
 
-	public void saveGame(Games game, Long id) {
+	public void saveGame(Games game) {
 		game = new Games(game.getPegi(), game.getName(), game.getCategory(), game.getNplayer(), game.getType());
 		gamesRepo.save(game);
 	}

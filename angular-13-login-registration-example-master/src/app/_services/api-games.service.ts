@@ -24,4 +24,10 @@ export class ApiGamesService {
       return this.http.delete<any>(`${this.url}/deleteGame/${gameId}`);
     }
 
+    addGames(s:any){
+      const body = s;
+
+      return this.http.post(`${this.url}/addNewGame`,body)
+    }
+
   }
