@@ -5,7 +5,7 @@
             <h1>WELCOME TO 3F PLAYROOM CATALOG</h1>
         </div>
         <div class="col-lg-2 text-right">
-          <span class="material-icons py-3 px-3">add</span>
+          <button class="btn btn-primary"><p>Aggiungi Gioco</p><span class="material-icons py-3 px-3">add</span></button>
       </div>
     </div>
 
@@ -29,7 +29,7 @@
                 <td>{{f.name}}</td>
                 <td>{{f.nplayer}}</td>
                 <td>{{f.pegi}}</td>
-                <td><span class="material-icons py-2 px-2" (click)="editGame(f)">edit</span> <span class="material-icons py-2 px-2" (click)="deleteGame(f)">delete</span></td>
+                <td><button class="btn btn-primary"><span class="material-icons py-2 px-2 text-white">edit</span></button> <button class="btn btn-primary"><span class="material-icons py-2 px-2 text-white" (click)="deleteGame(f)">delete</span></button></td>
               </tr>
               </tbody>
 
