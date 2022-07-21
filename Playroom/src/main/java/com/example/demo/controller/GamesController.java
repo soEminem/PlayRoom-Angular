@@ -20,9 +20,9 @@ public class GamesController {
         return gamesService.getAllGames();
     }
  
-    @PostMapping("/addNewGame/{id}")
-    public void addNewGame(@RequestBody Games game, @PathVariable("id") Long id) {
-        gamesService.saveGame(game, id);
+    @PostMapping("/addNewGame")
+    public void addNewGame(@RequestBody Games game) {
+        gamesService.saveGame(game);
     }
  
     @DeleteMapping("/deleteGame/{id}")

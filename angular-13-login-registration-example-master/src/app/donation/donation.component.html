@@ -11,32 +11,32 @@
     </div>
     <br>
    
-        <form class="row g-3">
+        <form [formGroup]="gameForm" class="row g-3">
         <div class="col-lg-6">
             <label for="inputCateegory" class="form-label">Category <mat-icon>games</mat-icon></label>
-            <input type="text" class="form-control" id="mail">
+            <input type="text" class="form-control" id="mail" formControlName="category">
         </div>
         <div class="col-lg-6">
             <label for="inputName" class="form-label">Name<mat-icon>games</mat-icon></label>
-            <input type="text" class="form-control" id="name">
+            <input type="text" class="form-control" id="name" formControlName="name">
         </div>
 
         <div class="col-lg-6">
             <label for="inputNplayer" class="form-label">Insert Number Of Player  <mat-icon>games</mat-icon></label>	
-            <input type="number" name="" id="nPlayers" class="form-control">
+            <input type="number" name="" id="nPlayers" class="form-control" formControlName="nPlayers">
         </div>
 
         <div class="col-lg-6">
             <label for="inputPegi" class="form-label">Pegi <mat-icon>games</mat-icon></label>
-            <input type="number" name="" id="Pegi" class="form-control">
+            <input type="number" name="" id="Pegi" class="form-control" formControlName="pegi">
         </div>
 
         <div class="col-lg-12">
             <label for="inputType" class="form-label">1 for VideoGame and 0 for Board Game <mat-icon>games</mat-icon></label>
-            <input type="number" name="" id="Type" class="form-control">
+            <input type="number" name="" id="Type" class="form-control" formControlName="type">
         </div>
         
-        <button type="submit" id="sendGame" class="btn btn-secondary btn-lg">Send game</button>
+        <button type="button" id="sendGame" class="btn btn-secondary btn-lg" (click)="check()">Send game</button>
     </form>
     </div>
 

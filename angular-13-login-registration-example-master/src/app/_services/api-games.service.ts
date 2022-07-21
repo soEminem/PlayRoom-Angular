@@ -15,4 +15,10 @@ export class ApiGamesService {
       return this.http.get<any>(`${this.url}/getAllGames`);
     }
 
+    addGams(s:any){
+      const body = s;
+
+      return this.http.post(`${this.url}/addNewGame`,body)
+    }
+
   }
