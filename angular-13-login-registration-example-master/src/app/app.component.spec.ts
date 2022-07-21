@@ -32,4 +32,10 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('Angular13JwtAuth app is running!');
   });
+<<<<<<< HEAD
 });
+=======
+});
+
+/**/
+>>>>>>> 7729fc0cd74c1089a49e1648f3ca340553c99640

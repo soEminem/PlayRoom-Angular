@@ -1,3 +1,4 @@
+import { DonationComponent } from './donation/donation.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
   { path: "catalog", component:CatalogComponent},
+  { path: "donation", component:DonationComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
