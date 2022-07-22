@@ -15,7 +15,7 @@ export class CatalogComponent implements OnInit {
   ngOnInit(): void {
   this.getGames()
   }
- 
+
   getGames(){
      this.ApiGames.getAllGames().subscribe({
       next: (success:any ) => this.gamesDB = success,
@@ -24,7 +24,7 @@ export class CatalogComponent implements OnInit {
   }
 
   /*
-  
+
   Opzione 1: edit con form in una nuova pagina (se prevista pagina dettagli), in tal caso faccio redirect
    Opzione 2: inline edit form, qui bisogna fare la subscribe ma implementare i form
    Ditemi voi
